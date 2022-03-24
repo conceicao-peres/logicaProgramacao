@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+
+<form action="">
+    <input type="text" id="name" name="name">
+    <input type="submit" value="cripto">
+</form>
+
+<script>
+    var input = document.querySelector("#name");
+    var texto = input.value;
+    input.focus()
+    var button = document.querySelector("button")
+
+    function criptografar(){
+        var texto = input.value
+        var textoCriptografado = texto.replace(/e/gi,"enter").replace(/i/gi,"imes").replace(/a/gi,"ai").replace(/o/gi,"ober").replace(/u/gi, "ufat")
+        alert(textoCriptografado)
+        input.value = " "
+        input.focus()
+    }
+    button.onclick = criptografar
+</script>

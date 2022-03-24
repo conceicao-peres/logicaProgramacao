@@ -1,0 +1,17 @@
+<meta charset="UTF-8">
+<input/>
+<button>descriptografar</button>
+
+<script>
+    var input = document.querySelector("input")
+    input.focus()
+    var button = document.querySelector("button")
+    function descriptografar(){
+        var texto = input.value
+        var textoDecripto = texto.replace(/enter/gi,"e").replace(/imes/gi,"i").replace(/ai/gi,"a").replace(/ober/gi,"o").replace(/ufat/gi, "u")
+        alert(textoDecripto)
+        input.value = " "
+        input.focus()
+    }
+    button.onclick = descriptografar
+</script>

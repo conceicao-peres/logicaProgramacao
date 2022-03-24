@@ -1,0 +1,48 @@
+<meta charset="UTF-8">
+<script>
+   
+    var palavras = ["melancia", "banana", "laranja"] 
+    var palavraSelecionada = [palavras[Math.floor(Math.random() * palavras.length)]]
+    var arrayPalavra=[]
+
+    for (var i=0; i < palavraSelecionada.length; i++){
+        arrayPalavra = palavraSelecionada[i] 
+    }
+
+    document.write(palavraSelecionada, "<br>")
+    
+    var letra = prompt("Digite uma letra: ")
+    for (var i=0; i < arrayPalavra.length; i++){
+        var x = arrayPalavra[i]
+        if(x == letra){
+            var index = []
+            var elemento = letra
+            var idx = arrayPalavra.indexOf(elemento);
+            while (idx != -1) {
+                index.push(idx);
+                idx = arrayPalavra.indexOf(elemento, idx + 1);
+            }
+            document.write(letra)
+        }else{
+            document.write(" __ ")
+        }
+    }
+   
+    document.write("<br>", index)
+    
+
+    document.write(newArray[0])
+
+
+
+ 
+
+     /*  
+    
+    document.write(arrayPalavra.length, "<br>")
+    document.write(palavraSelecionada.length, "<br>") 
+    document.write(palavraSelecionada[0][2], "<br>")
+    */
+     
+ </script>
+

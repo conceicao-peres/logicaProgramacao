@@ -1,0 +1,44 @@
+<canvas width="600" height="400"></canvas>
+<script>
+
+    var tela = document.querySelector('canvas')
+    var pincel = tela.getContext('2d')
+
+    pincel.fillStyle = 'lightgrey'
+    pincel.fillRect(0, 0, 600, 400)
+
+    function grafico(x, y, largura, altura, cor){
+        var tela = document.querySelector('canvas')
+        var pincel = tela.getContext('2d')
+
+        pincel.fillStyle = cor
+        pincel.fillRect(x, y, largura, altura)
+        pincel.strokeStyle = "black"
+        pincel.strokeRect(x, y, largura, altura)
+    }
+
+    function texto(texto, x, y){
+        var tela = document.querySelector("canvas")
+        var pincel = tela.getContext("2d")
+
+        pincel.font = "20px arial"
+        pincel.fillStyle = "black"
+        pincel.fillText(texto, x, y);   
+    }
+
+    texto("2015", 305, 195)
+    var x = 300
+    var largura = 60
+    grafico(x, 200, largura, 50, "darkblue" )    
+    grafico(x, 250, largura, 25, "green" )   
+    grafico(x, 275, largura, 20, "yellow" )    
+    grafico(x, 295, largura, 5, "red" )     
+
+    texto("2016", 405, 195)
+    var x = 400
+    var largura = 60
+    grafico(x, 200, largura, 65, "darkblue" )    
+    grafico(x, 265, largura, 20, "green" )   
+    grafico(x, 285, largura, 13, "yellow" )    
+    grafico(x, 298, largura, 2, "red" )  
+</script>
