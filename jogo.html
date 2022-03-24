@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>")
+    }
+
+    function mostra(frase) {
+
+        document.write(frase)
+        pulaLinha();
+    }
+
+    var numeroPensado = Math.round(Math.random() * 10)
+
+    var chute = parseInt(prompt("Digite um número de 0 a 10"))
+
+    while(chute != numeroPensado){
+        if(chute > numeroPensado) {
+            alert("Errou! O número digitado é maior que o número pensado")
+            chute = parseInt(prompt("Digite novamente"))
+        } else{
+            alert("Errou! O número digitado é menor que o número pensado")
+            chute = parseInt(prompt("Digite novamente"))
+        }
+    }
+    mostra("Acertou, o número pensado foi: " + numeroPensado)
+    
+</script>

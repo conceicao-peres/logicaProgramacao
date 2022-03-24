@@ -1,0 +1,13 @@
+<meta charset="UTF-8">
+<script>
+    function frase(frase){
+        document.write(frase)
+    }
+    function calculaImc(peso, altura){
+        var imc = (Math.round(peso / (altura*altura)))
+        return imc
+    }
+    var meuImc = calculaImc(64, 1.58)
+    document.write(meuImc)
+    //frase("Meu IMC é: "+ meuImc)
+</script>

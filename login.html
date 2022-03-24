@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+<script>
+    var usuario = "alura"
+    var login = "alura123"
+    var tentativaLogin = 3
+    var usuarioInformato = prompt("Informe o usuário")
+    var loginInformato = prompt("Informe a senha")
+    
+    if(usuarioInformato == usuario && loginInformato == login){
+        alert("Bem-vindo " + usuarioInformato)
+    }else{
+        while(tentativaLogin > 1){
+            alert("Usuário e / ou senha inválidos. Tentativas restamtes: " + (tentativaLogin - 1))
+            usuarioInformato = prompt("Informe o usuário")
+            loginInformato = prompt("Informe a senha")
+            tentativaLogin = tentativaLogin - 1
+        }
+    }
+
+</script>

@@ -1,0 +1,12 @@
+<neta charset = "UTF-8">
+
+    <script>
+        function frase(frase){
+            document.write(frase)
+        }
+        function calculaIMC(peso, altura){
+            var imc = (peso / (altura * altura))
+            frase("O IMC é: "+ Math.round(imc))
+        }
+        calculaIMC(64, 1.58)
+    </script>

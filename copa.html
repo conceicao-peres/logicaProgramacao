@@ -1,0 +1,18 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha(){
+        document.write("<br>")
+    }
+    function frase(frase){
+        document.write(frase)
+        pulaLinha()
+    }
+    var anoInicio = parseInt(prompt("Digite o ano início"))
+    var anoLimite = parseInt(prompt("Digite o ano limite"))
+    var anoInicio1 = anoInicio 
+    while(anoInicio <= anoLimite){
+        frase(anoInicio + " teve copa")
+        anoInicio = anoInicio + 4
+    }
+    frase("Esses foram os anos que tiverm copa de " + anoInicio1 + " até " + anoLimite)
+</script>
